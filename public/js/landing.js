@@ -1,25 +1,33 @@
-!(function () {
+(function () {
     'use strict';
-    const e = document.getElementsByClassName('accordion-header');
+    const accordionHeaders = document.getElementsByClassName('accordion-header');
 
-    function t(e, t) {
-        e.classList.add('is-active'), (t.style.maxHeight = t.scrollHeight + 'px');
+    function activateAccordion(header, content) {
+        header.classList.add('is-active');
+        content.style.maxHeight = content.scrollHeight + 'px';
     }
 
-    function n(e, t) {
-        e.classList.remove('is-active'), (t.style.maxHeight = null);
+    function deactivateAccordion(header, content) {
+        header.classList.remove('is-active');
+        content.style.maxHeight = null;
     }
 
-    if (e.length > 0)
-        for (let i = 0; i < e.length; i++) {
-            const s = e[i],
-                a = s.parentNode,
-                l = s.nextElementSibling;
-            a.classList.contains('is-active') && t(a, l),
-                s.addEventListener('click', function () {
-                    a.classList.contains('is-active') ? n(a, l) : t(a, l);
-                });
-        }
+    if (accordionHeaders.length > 0) {
+        Array.from(accordionHeaders).forEach(header => {
+            const parent = header.parentNode;
+            const content = header.nextElementSibling;
+            if (parent.classList.contains('is-active')) {
+                activateAccordion(parent, content);
+            }
+            header.addEventListener('click', () => {
+                if (parent.classList.contains('is-active')) {
+                    deactivateAccordion(parent, content);
+                } else {
+                    activateAccordion(parent, content);
+                }
+            });
+        });
+    }
 })(),
     (function () {
         'use strict';
