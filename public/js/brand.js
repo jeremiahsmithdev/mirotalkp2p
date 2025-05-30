@@ -39,8 +39,8 @@ const footer = document.getElementById('footer');
 let brand = {
     app: {
         language: 'en',
-        name: 'MiroTalk',
-        title: 'MiroTalk<br />Free browser based Real-time video calls.<br />Simple, Secure, Fast.',
+        name: 'Private Video Call System',
+        title: 'Private Video Call System<br />[TEST/ALPHA RELEASE].<br />By PrivSecure',
         description:
             'Start your next video call with a single click. No download, plug-in, or login is required. Just get straight to talking, messaging, and sharing your screen.',
         joinDescription: 'Pick a room name.<br />How about this one?',
@@ -50,16 +50,16 @@ let brand = {
     site: {
         shortcutIcon: '../images/logo.svg',
         appleTouchIcon: '../images/logo.svg',
-        landingTitle: 'MiroTalk a Free Secure Video Calls, Chat & Screen Sharing.',
-        newCallTitle: 'MiroTalk a Free Secure Video Calls, Chat & Screen Sharing.',
+        landingTitle: 'Private Video Call System.',
+        newCallTitle: 'Private Video Call System.',
         newCallRoomTitle: 'Pick name. <br />Share URL. <br />Start conference.',
         newCallRoomDescription:
             "Each room has its disposable URL. Just pick a room name and share your custom URL. It's that easy.",
-        loginTitle: 'MiroTalk - Host Protected login required.',
-        clientTitle: 'MiroTalk WebRTC Video call, Chat Room & Screen Sharing.',
-        privacyPolicyTitle: 'MiroTalk - privacy and policy.',
+        loginTitle: 'PrivSecure - Host Protected login required.',
+        clientTitle: 'PrivSecure WebRTC Video call, Chat Room & Screen Sharing.',
+        privacyPolicyTitle: 'PrivSecure - privacy and policy.',
         stunTurnTitle: 'Test Stun/Turn Servers.',
-        notFoundTitle: 'MiroTalk - 404 Page not found.',
+        notFoundTitle: 'PrivSecure - 404 Page not found.',
     },
     html: {
         features: true,
