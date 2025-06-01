@@ -40,9 +40,9 @@ let brand = {
     app: {
         language: 'en',
         name: 'Private Video Call System',
-        title: 'Private Video Call System<br />[TEST/ALPHA RELEASE].<br />By PrivSecure',
+        title: 'Private Video Call System',
         description:
-            'Start your next video call with a single click. No download, plug-in, or login is required. Just get straight to talking, messaging, and sharing your screen.',
+            '[TEST/ALPHA RELEASE] By PrivSecure',
         joinDescription: 'Pick a room name.<br />How about this one?',
         joinButtonLabel: 'JOIN ROOM',
         joinLastLabel: 'Your recent room:',
