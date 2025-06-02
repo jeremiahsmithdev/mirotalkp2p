@@ -685,7 +685,8 @@ let surveyURL = 'https://www.questionpro.com/t/AUs7VZq00L';
 
 // Redirect on leave room
 let redirectActive = false;
-let redirectURL = '/newcall';
+// let redirectURL = '/newcall';
+let redirectURL = '/';
 
 /**
  * Load all Html elements by Id
@@ -11147,7 +11148,8 @@ function handleKickedOut(config) {
         hideClass: { popup: 'animate__animated animate__fadeOutUp' },
     }).then(() => {
         checkRecording();
-        openURL('/newcall');
+        // openURL('/newcall');
+        openURL('/');
     });
 }
 
@@ -11212,7 +11214,8 @@ function showAbout() {
 function leaveRoom() {
     checkRecording();
     if (surveyActive) {
-        leaveFeedback();
+        // leaveFeedback();
+        redirectOnLeave();
     } else {
         redirectOnLeave();
     }
@@ -11244,7 +11247,8 @@ function leaveFeedback() {
 }
 
 function redirectOnLeave() {
-    redirectActive ? openURL(redirectURL) : openURL('/newcall');
+    // redirectActive ? openURL(redirectURL) : openURL('/newcall');
+    redirectActive ? openURL(redirectURL) : openURL('/');
 }
 
 /**
