@@ -475,6 +475,8 @@ h1,
 .h1 {
     font-size: 38px;
     line-height: 48px;
+    white-space: nowrap;
+    width: 100%;
 }
 
 h2,
