@@ -2044,7 +2044,7 @@ textarea.form-input {
 }
 
 .site-header + .site-content .section:first-of-type {
-    padding-top: 80px;
+    padding-top: 0px;
 }
 
 .site-header .brand {
