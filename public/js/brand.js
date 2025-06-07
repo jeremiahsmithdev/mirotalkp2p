@@ -75,13 +75,6 @@ let brand = {
         imageUrl: '../images/mirotalk-logo.gif',
         title: 'WebRTC P2P v1.5.12',
         html: `
-            <button 
-                id="support-button" 
-                data-umami-event="Support button" 
-                onclick="window.open('https://codecanyon.net/user/miroslavpejic85')">
-                <i class="fas fa-heart" ></i>&nbsp;Support
-            </button>
-            <br /><br /><br />
             Author:<a 
                 id="linkedin-button" 
                 data-umami-event="Linkedin button" 
